@@ -1,0 +1,28 @@
+.hero-text{
+     margin-top: 300px;
+}
+.hero-text h1 {
+     color: #191919;
+     font-weight: 700;
+     font-size: 50px;
+}
+.input-sec input {
+     background: #fff;
+     border: none;
+     padding: 9px 18px;
+     width: 50%;
+     outline: none;
+     border-radius: 50px;
+     margin-top: 30px;
+ }
+
+ button.btn-search {
+     border: none;
+     padding: 9px 30px;
+     background: #F91944;
+     color: #fff;
+     border-radius: 25px;
+     font-size: 16px;
+     font-weight: 600;
+     margin-left: -42px;
+ }
