@@ -19,7 +19,7 @@ const NavMenu = () => {
                
                </Navbar.Brand>
                <Nav className="ms-auto">
-                    <Nav.Link as={NavLink} to="/shipping"><i class="fas fa-cart-plus"></i></Nav.Link>
+                    <Nav.Link as={NavLink} to="/shipping"><i className="fas fa-cart-plus"></i></Nav.Link>
                     <Nav.Link as={NavLink} style={{color : "#1a1a1b", fontWeight:"600", margin : "0 10px"}}  to="/login">Login</Nav.Link>
                     <Nav.Link as={NavLink} style={{ background: "#F91944" , color : "#FFF", padding : "6px 16px", borderRadius : "25px", marginLeft : "10px"}} className="btn-pro" to="/signup">Sign up</Nav.Link>
                </Nav>
