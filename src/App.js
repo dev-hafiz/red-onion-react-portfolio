@@ -12,11 +12,14 @@ import NavMenu from './Pages/Home/NavMenu/NavMenu';
 import Shipping from './Pages/Home/Shipping/Shipping';
 import SignUp from './Pages/Home/SignUp/SignUp';
 import PageNotFound from './Pages/PageNotFound/PageNotFound';
+import AuthProvider from './Pages/AuthProvider/AuthProvider';
+import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
     <div className="">
-          <Router>
+        <AuthProvider>
+        <Router>
             <NavMenu/>
               <Switch>
                   <Route exact path ="/">
@@ -25,9 +28,9 @@ function App() {
                   <Route path="/home">
                     <Home/>
                   </Route>
-                  <Route path="/shipping">
+                  <PrivateRoute path="/shipping">
                     <Shipping/>
-                  </Route>
+                  </PrivateRoute>
                   <Route path="/login">
                     <Login/>
                   </Route>
@@ -43,9 +46,9 @@ function App() {
                   <Route path="/dinner">
                     <Dinner/>
                   </Route>
-                  <Route path="/singlefood/:foodId">
+                  <PrivateRoute path="/singlefood/:foodId">
                       <FoodDetail/>
-                  </Route>
+                  </PrivateRoute>
                   <Route path="*">
                     <PageNotFound/>
                   </Route>
@@ -54,6 +57,7 @@ function App() {
               
               <Footer/>
           </Router>
+        </AuthProvider>
     </div>
   );
 }

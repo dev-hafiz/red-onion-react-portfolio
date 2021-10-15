@@ -1,0 +1,27 @@
+.register-form img{
+margin-bottom: 50px;
+}
+.register-form input{
+width: 350px;
+padding: 10px 10px;
+background: #eee;
+border: none;
+outline: none;
+margin: 10px 0;
+font-size: 20px;
+}
+
+.form-btn{
+     background: #F91944;
+     width: 350px;
+     padding: 10px 10px;
+     border: none;
+     outline: none;
+     margin: 10px 0;
+     color: white;
+}
+
+.alert-sign{
+     text-decoration: none;
+     color: red;
+}

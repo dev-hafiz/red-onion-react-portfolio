@@ -1,0 +1,12 @@
+.shipping-form input {
+width: 350px;
+padding: 10px 10px;
+background: #eee;
+border: none;
+margin: 8px 0;
+outline: none;
+}
+.shipping-sbumit{
+     background: #F91944 !important;
+     color: #FFF;
+}
