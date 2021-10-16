@@ -1,0 +1,38 @@
+.price-level{
+     font-size: 40px;
+     margin-right: 16px;
+     font-weight: 600;
+}
+h2.fd-title {
+     font-size: 45px;
+     font-weight: 700;
+     margin-bottom: 40px;
+ }
+ p.fd-param {
+     font-size: 22px;
+     margin: 50px 0;
+     line-height: 38px;
+ }
+.order-sec{
+     background: #eee;
+     padding: 6px 10px;
+     border-radius: 30px;
+     
+     
+}
+.order-count{
+     border: none;
+     outline: none;
+     font-size: 30px;
+     color: red;
+}
+
+button.add {
+     margin: 30px 0;
+     background: #F91944;
+     color: white;
+     border: none;
+     padding: 10px 12px;
+     font-size: 20px;
+     border-radius: 25px;
+ }
