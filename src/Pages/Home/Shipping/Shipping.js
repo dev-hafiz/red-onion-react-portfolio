@@ -1,6 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import useAuth from "../../../hooks/useAuth";
+import Cart from "../Cart/Cart";
 import './Shipping.css';
 
 
@@ -39,7 +40,7 @@ const Shipping = () => {
                                         
                </div>
                <div className="col-lg-5">
-
+                    
                </div>
 
                </div>

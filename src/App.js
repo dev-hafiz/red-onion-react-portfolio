@@ -15,7 +15,11 @@ import PageNotFound from './Pages/PageNotFound/PageNotFound';
 import AuthProvider from './Pages/AuthProvider/AuthProvider';
 import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 
+
+
 function App() {
+
+
   return (
     <div className="">
         <AuthProvider>

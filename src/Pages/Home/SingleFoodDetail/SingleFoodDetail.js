@@ -2,20 +2,10 @@ import React from 'react';
 import { useState } from 'react';
 import './SingleFoodDetail.css';
 
-const SingleFoodDetail = ({detail}) => {
+const SingleFoodDetail = ({detail, handleCart}) => {
      const {title, description, img1, img2, img3, price} = detail || {};
 
-     const [increace, setIncreace ] = useState(0)
-     
-     
-          const handleIncreace = () =>{
-               setIncreace(increace + 1)
-          }
-    
-          const handledicreace = () =>{
-               setIncreace(increace - 1)
-          }
-     
+   
 
      return (
           <>
@@ -28,11 +18,8 @@ const SingleFoodDetail = ({detail}) => {
                    </div>
                    <div className="d-flex ">
                    <h3 className="price-level">{price}</h3> 
-                   <div className="   order-sec">
-                   <span><button className="order-count" onClick={handledicreace}>-</button> {increace} <button className="order-count" onClick={handleIncreace}>+</button></span>
                    </div>
-                   </div>
-                   <button className="add"> <i class="fas fa-cart-plus"></i> Add</button>
+                   <button onClick={ ()=> handleCart(detail)} className="add"> <i class="fas fa-cart-plus"></i> Add</button>
                   
 
                </div>
